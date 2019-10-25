@@ -1,0 +1,753 @@
+/*main*/
+#MainWindow{
+        border-top-color: rgb(101, 240, 255);
+}
+#centralwidget{
+        width: 1110px;
+        height: 600px;
+}
+#gridWidget{
+        width: 888px;
+        height: 598px;
+        background-color: #f6f6f6;
+        border-image: url(:/img/icon/background_shadow.png) 0 0 0 0 stretch stretch;
+        border-top:2px solid #d8d8d8;
+}
+#widget_main{
+        width: 828px;
+        height: 518px;
+        background-color:#272727;
+        border:5px solid #d5d5d9;
+        border-image: url();
+}
+#viewerPanel_main{
+        width: 810px;
+        height: 500px;
+        background-color: #272727;
+        border:0;
+}
+#gridWidget_2{
+        width: 220px;
+        height: 598px;
+        background-color: #272727;
+}
+#navigationPanel{
+        width: 222px;
+        height: 650px;
+        background-color: #272727;
+}
+/*backpanel(widget)*/
+#widget_backpanel{
+        width: 302px;
+        height: 31px;
+        background:pink;
+}
+#pushButtonBack{
+        width: 60px;
+        height: 23px;
+        border:none; color:white; font:13px 'Roboto';
+}
+/* CanBusView*/
+
+
+#CANBusViewLabel{
+        width: 150px;
+        height: 30px;
+        color: white;
+        font: 14px 'Roboto';
+        font-weight:500;
+        padding-bottom:7px;
+        border-color:rgb(100,100,100);
+
+}
+#CANBusViewPanel{
+        width: 150px;
+        height: 150px;
+        border-image:none;
+        border-style:solid;
+        border-width:4px;
+        border-color:rgb(100,100,100);
+        background-color: rgb(39,39,39)
+}
+
+
+/*exportdata: Start*/
+#btn_choose {
+        width:18px;
+        height:25px;
+        background-image: url(:/img/icon/choose-folder.png) 0 0 0 0 stretch stretch;
+        border:0;
+        vertical-align: middle;
+        font-size:1px;
+}
+
+#label{
+        width:282px;
+        height:13px;
+        color : #acacac;
+        font-size:14px;
+        font-family: 'Roboto';
+}
+
+#lineEdit_export{
+        width:282px;
+        height:22px;
+        background-color:#0f0f0f;
+        selection-background-color: #0f0f0f;
+        border:1px solid #4b4b4b;
+        border-radius: 3px;
+        padding: 0px 8px;
+        font-size: 12px;
+        font-family:'Roboto';
+        text-align: left;
+        color: #acacac;
+        margin:7px 10px 0 0px;
+}
+#lineEdit_export::focus{ background-color:#0f0f0f;}
+
+#cb_export,
+#cb_extraction{
+        width:282px;
+        height:20px;
+        color: #acacac;
+        font-size:12px;
+        font-family: 'Roboto';
+        font-weight:500;
+        margin-top:11px;
+}
+#cb_extraction{
+    margin-top:5px;
+}
+#cb_export::indicator,
+#cb_extraction::indicator{
+    width: 15px; height: 15px; border-radius:3px;
+}
+#cb_export::indicator::checked,
+#cb_extraction::indicator::checked{
+    background-image: url(:/img/icon/Right-select.png);
+}
+#cb_export::indicator::unchecked,
+#cb_extraction::indicator::unchecked{
+    background-image: url(:/img/icon/Right-None-select.png);
+}
+
+#cb_las{
+        width:135px;
+        height:17px;
+        color: #acacac;
+        font-size:12px;
+        font-family: 'Roboto';
+        margin-top:5px;
+}
+#cb_pcd,
+#cb_ply{
+        width:135px;
+        height:17px;
+        color: #acacac;
+        font-size:12px;
+        font-family: 'Roboto';
+}
+#cb_xyz{
+        width:136px;
+        height:17px;
+        color: #acacac;
+        font-size:12px;
+        font-family: 'Roboto'
+}
+#cb_las::indicator{
+        width: 15px; height: 15px; border-radius:3px;
+}
+#cb_las::indicator::checked{
+        background-image: url(:/img/icon/Right-select.png);
+}
+#cb_las::indicator::unchecked{
+        background-image: url(:/img/icon/Right-None-select.png);
+}
+/*#cb_pcd,
+#cb_ply{
+        width:135px;
+        height:17px;
+        color: #acacac;
+        font-size:12px;
+        font-family: 'Roboto';
+}*/
+#cb_pcd::indicator,
+#cb_ply::indicator,
+#cb_xyz::indicator{
+        width: 15px;
+        height: 15px;
+        border-radius:3px;
+}
+#cb_pcd::indicator::checked,
+#cb_ply::indicator::checked,
+#cb_xyz::indicator::checked{
+        background-image: url(:/img/icon/Right-select.png);
+}
+#cb_pcd::indicator::unchecked,
+#cb_ply::indicator::unchecked,
+#cb_xyz::indicator::unchecked{
+        background-image: url(:/img/icon/Right-None-select.png);
+}
+/*
+#cb_ply::indicator{
+        width: 15px; height: 15px; border-radius:3px;
+}
+#cb_ply::indicator::checked{
+        background-image: url(:/img/icon/Right-select.png);
+}
+#cb_ply::indicator::unchecked{
+        background-image: url(:/img/icon/Right-None-select.png);
+}*/
+/*#cb_xyz::indicator{
+        width: 15px;
+        height: 15px;
+        border-radius:3px;
+}
+#cb_xyz::indicator::checked{
+        background-image: url(:/img/icon/Right-select.png);
+}
+#cb_xyz::indicator::unchecked{
+        background-image: url(:/img/icon/Right-None-select.png);
+}*/
+#cb_bayer,
+#cb_rgb,
+#cb_yuv{
+        width:88px;
+        height:15px;
+        color: #acacac;
+        font-size:12px;
+        font-family: 'Roboto';
+}
+#cb_bayer::indicator,
+#cb_rgb::indicator,
+#cb_yuv::indicator{
+        width: 15px;
+        height: 15px;
+        border-radius:3px;
+}
+#cb_bayer::indicator::checked,
+#cb_rgb::indicator::checked,
+#cb_yuv::indicator::checked{
+        background-image: url(:/img/icon/Right-select.png);
+}
+#cb_bayer::indicator::unchecked,
+#cb_rgb::indicator::unchecked,
+#cb_yuv::indicator::unchecked{
+        background-image: url(:/img/icon/Right-None-select.png);
+}
+/*#cb_rgb{
+        width:89px;
+        height:15px;
+        color: #acacac;
+        font-size:12px;
+        font-family: 'Roboto';
+}
+#cb_rgb::indicator{
+        width: 15px;
+        height: 15px;
+        border-radius:3px;
+}
+#cb_rgb::indicator::checked{
+        background-image: url(:/img/icon/Right-select.png);
+}
+#cb_rgb::indicator::unchecked{
+        background-image: url(:/img/icon/Right-None-select.png);
+}
+#cb_yuv{
+        width:88px;
+        height:15px;
+        color: #acacac;
+        font-size:12px;
+        font-family: 'Roboto';
+}
+#cb_yuv::indicator{
+        width: 15px;
+        height: 15px;
+        border-radius:3px;
+}
+#cb_yuv::indicator::checked{
+        background-image: url(:/img/icon/Right-select.png);
+}
+#cb_yuv::indicator::unchecked{
+        background-image: url(:/img/icon/Right-None-select.png);
+}*/
+#lineEdit_ros{
+        width:124px;
+        height:22px;
+        background-color:#0f0f0f;
+        selection-background-color: #0f0f0f;
+        border: 1px solid #4b4b4b;
+        border-radius: 3px;
+        padding: 0px 8px;
+        font-size: 12px;
+        font-family:'Roboto';
+        text-align: left;
+        color: #acacac;
+}
+
+#lineEdit_ros2{
+        width:124px;
+        height:22px;
+        background-color:#0f0f0f;
+        selection-background-color: #0f0f0f;
+        border: 1px solid #4b4b4b;
+        border-radius: 3px;
+        padding: 0px 8px;
+        font-size: 12px;
+        font-family:'Roboto';
+        text-align: left;
+        color: #acacac;
+}
+#label_2{
+        width:279px;
+        height:13px;
+        color : #acacac;
+        font-size:14px;
+        font-family: 'Roboto';
+}
+#lineEdit_exportformat{
+        width:279px;
+        height:22px;
+        background-color:#0f0f0f;
+        selection-background-color: #0f0f0f;
+        border: 1px solid #4b4b4b;
+        border-radius: 3px;
+        padding: 0px 8px;
+        font-size: 12px;
+        font-family:'Roboto';
+        text-align: left;
+        margin-top:3px;
+        color: #acacac;
+        vertical-align:top;
+}
+#lineEdit_image{
+        width:279px;
+        height:22px;
+        background-color:#0f0f0f;
+        selection-background-color: #0f0f0f;
+        border: 1px solid #4b4b4b;
+        border-radius: 3px;
+        padding: 0px 8px;
+        font-size: 12px;
+        font-family:'Roboto';
+        text-align: left;
+        color: #acacac;
+}
+#cb_rosbag{
+        width:123px;
+        height:27px;
+        color: #acacac;
+        font-size:12px;
+        font-family: 'Roboto'; margin-top:12px;
+}
+#cb_rosbag2{
+        width:124px;
+        height:27px;
+        color: #acacac;
+        font-size:12px;
+        font-family: 'Roboto';margin-top:12px;
+}
+#cb_rosbag::indicator,
+#cb_rosbag2::indicator{
+        width: 15px;
+        height: 15px;
+        border-radius:3px;
+}
+#cb_rosbag::indicator::checked,
+#cb_rosbag2::indicator::checked{
+        background-image: url(:/img/icon/Right-select.png);
+}
+#cb_rosbag::indicator::unchecked,
+#cb_rosbag2::indicator::unchecked{
+        background-image: url(:/img/icon/Right-None-select.png);
+}
+
+#pb_cancel,
+#pb_export_data{
+        width:115px;
+        height:27px;
+        border-radius: 12px;
+        border: 1px solid #444444;
+        color: #acacac;
+        font-size: 14px;
+        font-family:'Roboto';
+}
+#pb_cancel::hover,
+#pb_export_data::hover{
+        background-color: #e1e1e1; border: 1px solid #e1e1e1; color:black;
+}
+#pb_cancel::pressed,
+#pb_export_data::pressed{
+         background-color: #e1e1e1; border: 1px solid #e1e1e1; color:black;
+}
+/*#pb_export_data{
+        width:115px;
+        height:27px;
+        border-radius:12px;
+    border: 1px solid #444444;
+    color: #acacac;
+        font-size: 14px;
+        font-family:'Roboto';
+}
+#pb_export_data::pressed{
+        background-color: #e1e1e1; border: 1px solid #e1e1e1; color:black;
+}
+#pb_export_data::hover{
+         background-color: #e1e1e1; border: 1px solid #e1e1e1; color:black;
+}*/
+
+/*exportdata_left*/
+
+#lb_camera{
+        width:135px;
+        height:14px;
+        font:12px 'Roboto Medium';
+        color:#ffffff;
+        background:transparent;
+}
+#widget_camera{
+        width:135px;
+        height:120px;
+}
+#cb_camera{
+        width:117px;
+        height:15px;
+        color: white;
+        font: 13pt;
+
+}
+#cb_camera::indicator {width: 15px; height: 15px; border-radius:3px;}
+#cb_camera::indicator::checked {background-image: url(:/img/icon/Left-select.png);}
+#cb_camera::indicator::unchecked {background-image: url(:/img/icon/None-select.png);}
+
+
+/*ImageView*/
+
+#imageLabel{
+        width: 150px;
+        height: 30px;
+        color: white;
+        font: 14px 'Roboto';
+        font-weight:500;
+        padding-bottom:5px;
+}
+#imagePanel{
+        width: 150px;
+        height: 150px;
+        border-style:solid;
+        border-width:4px;
+        border-radius:5px;
+        border-color:rgb(100,100,100);
+        background-color:rgb(96,96,96);
+}
+
+/*navigation*/
+
+#rd_all{
+        width:150px;
+        height:18px;
+        color: white;
+        font-weight:500;
+        font: 14px 'Roboto';
+}
+#rd_camera{
+        width:150;
+        height:18;
+        color: white;
+        font-weight:500;
+        font: 14px 'Roboto'
+}
+#rd_can{
+        width:150;
+        height:18;
+        color: white;
+        font-weight:500;
+        font: 14px 'Roboto'
+}
+#rd_gps{
+        width:150px;
+        height:18px;
+        color: white;
+        font-weight:500;
+        font: 14px 'Roboto'
+}
+#rd_lidar{
+        width:150px;
+        height:18px;
+        color: white;
+        font-weight:500;
+        font: 14px 'Roboto'
+}
+#rd_radar{
+        width:150px;
+        height:18px;
+        color: white;
+        font-weight:500;
+        font: 14px 'Roboto'
+}
+#rd_svm{
+        width:150px;
+        height:18px;
+        color: white;
+        font-weight:bold;
+        font: 14px 'Roboto'
+}
+#rd_all::indicator,
+#rd_camera::indicator,
+#rd_can::indicator,
+#rd_gps::indicator,
+#rd_lidar::indicator,
+#rd_radar::indicator,
+#rd_svm::indicator{
+    width: 18px; height: 18px; border-radius:5px;
+}
+#rd_all::indicator::checked,
+#rd_camera::indicator::checked,
+#rd_can::indicator::checked ,
+#rd_gps::indicator::checked,
+#rd_lidar::indicator::checked,
+#rd_radar::indicator::checked,
+#rd_svm::indicator::checked
+{
+    background-image: url(:/img/icon/radio-check.png);
+}
+#rd_all::indicator::unchecked,
+#rd_camera::indicator::unchecked,
+#rd_can::indicator::unchecked ,
+#rd_gps::indicator::unchecked,
+#rd_lidar::indicator::unchecked,
+#rd_radar::indicator::unchecked,
+#rd_svm::indicator::unchecked{
+    background-image: url(:/img/icon/radio-uncheck.png);
+}
+
+#label_data_playback{
+        width:150px;
+        height:18px;
+        color:#6a6b79;
+        font: 14px 'Roboto';
+        font-weight:bold;
+}
+#pb_load_to{
+        width: 160px;
+        height: 40px;
+        color: rgb(255, 255, 255);
+        background-color: #ef992a;
+        border-radius: 8px;
+        font-weight:bold;
+}
+#pb_load_to::hover{
+        width: 160px;
+        height: 40px;
+        color: #fff;
+        background-color:#f49f31;
+        border-radius:8px;
+        font-weight:bold;
+}
+
+#pb_browse{
+        width: 160px;
+        height: 40px;
+        color: rgb(255, 255, 255);
+        background-color:#4db84b;
+        border-radius: 8px;
+        font-weight:bold;
+}
+
+#pb_browse::hover{
+        width: 160px;
+        height: 40px;
+        color: #fff;
+        background-color: #55cb53;
+        border-radius:8px;
+        font-weight:bold;
+}
+
+#pb_export{
+        width: 160px;
+        height: 40px;
+    color: rgb(255, 255, 255);
+        background-color:#0c9fdc;
+        border-radius: 10px;
+        font: 12pt 'Roboto';
+        font-weight:bold;
+}
+
+#pb_export::hover{
+        width: 160px;
+        height: 40px;
+        color: #fff;
+        background-color: #14a6e3;
+        border-radius: 8px;
+        font-weight:bold;
+}
+
+
+#rd_calib{
+        width:150px;
+        height:18px;
+        color: white;
+        font-weight:500;
+        font: 14px 'Roboto'
+}
+#rd_calib::indicator {width: 18px; height: 18px; border-radius:5px;}
+#rd_calib::indicator::checked {background-image: url(:/img/icon/radio-check.png);}
+#rd_calib::indicator::unchecked {background-image: url(:/img/icon/radio-uncheck.png);}
+
+#label_calib{
+        width: 150px;
+        height: 17px;
+        color:#6a6b79;
+        font: 14px 'Roboto';
+        font-weight:bold;
+}
+
+/*playbackcontrol*/
+
+#fullscreenBtn{
+        width: 16px;
+         height: 16px;
+         background-image: url(:/img/icon/Full screen-icon.png);
+     border-radius: 1px;
+}
+
+#playBtn{
+        width: 31px;
+         height: 31px;
+         background-image: url(:/img/icon/Play-icon.png);
+     border-radius: 1px;
+}
+#playBtn::checked{
+        background-image: url(:/img/icon/Pause-icon.png);
+        border-radius:10px;
+        font: 14px 'Roboto';}
+#seekbar{
+        width: 310px;
+        height: 22px;
+}
+#seekbar::groove:horizontal {border: 2px solid blue; height: 1px;background: green;margin: 0px 1px;}
+#seekbar::handle:horizontal {background:transparent;border-left: 7px solid red;width: 0px;height: 100px;margin:-5px -3px;border-radius:0px;}
+#seekbar::add-page:qlineargradient {background: white;}
+#seekbar::sub-page:qlineargradient {background: red;}
+
+/*playbackview*/
+
+#playbackLabel{
+        width: 150px;
+        height: 30;
+        border: none;
+        color:white;
+        font:14px 'Roboto Medium';
+        font-weight:500;
+    padding-bottom:7px;
+}
+
+#playbackPanel{
+        width: 150;
+        height: 180;
+        border-style:solid;
+        border-width:5px;
+        border-radius:5px;
+        border-color:rgb(100,100,100);
+        background-color:red;
+}
+
+/*simulationlidarview*/
+
+#simulationLabel{
+        width: 150;
+        height: 20;
+        color: white;
+        font: 14px 'Roboto';
+        font-weight:500;
+        padding-bottom:7px;
+}
+
+#simulationPanel_Lidar{
+        width: 150;
+        height: 150;
+        border-style:solid;
+        border-width:4px;
+        border-color:rgb(100,100,100);
+        background-color: rgb(86,86,86);
+}
+
+/*SimulationView*/
+
+#simulationLabel_2{
+        width: 150;
+        height: 30;
+        color: white;
+        font: 14px 'Roboto';
+        font-weight:500;
+        padding-bottom:7px;
+}
+
+#simulationPanel{
+        width: 150;
+        height: 150;
+        border-style:solid;
+        border-width:4px;
+        border-color:rgb(100,100,100);
+        background-color:rgb(39,39,39);
+
+}
+
+/*viewdataexport*/
+
+#label_viewdataexport{
+        width: 114;
+        height: 24;
+        min-height:27px;
+        max-width:114px;
+        margin-bottom:-3px;
+        color:#acacac;font:14px 'Roboto';
+        border:1px solid #585858;
+        border-top-left-radius:4px;
+        border-top-right-radius: 4px;
+        background-color:#191919;
+        padding:0 18px;
+        border-bottom-width:0px;
+}
+#widget{
+        width: 81px;
+        height: 76px;
+        /*background:#272727;*/
+        border:red;
+}
+
+/*viewerPanel*/
+
+#ViewerPanel{
+        width: 1016;
+        height: 650;
+}
+
+/*SVM*/
+#SVMLabel{
+  color: white;
+  font: 14px 'Roboto';
+  font-weight:500;
+  padding-bottom:7px;
+}
+
+#SVMPanel{
+        border-style:solid;
+        border-width:4px;
+        border-color:rgb(100,100,100);
+        background-color: rgb(86,86,86);
+}
+/*GPS*/
+/*GPS*/
+#GPSPanel{
+        border-style:solid;
+        border-width:4px;
+        border-color:rgb(100,100,100);
+        background-color:rgb(39,39,39);
+}
+#GPSLabel{
+        color: white;
+        font: 14px 'Roboto';
+        font-weight:500;
+        padding-bottom:7px;
+}

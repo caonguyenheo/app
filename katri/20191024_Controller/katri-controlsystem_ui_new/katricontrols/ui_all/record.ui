@@ -1,0 +1,2331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>record</class>
+ <widget class="QWidget" name="record">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1186</width>
+    <height>990</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hello, World!</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_9">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="styleSheet">
+        <string notr="true">background:#f0f2f6;
+padding: 3px 0;
+</string>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="tab_system">
+        <attribute name="title">
+         <string>Page</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_record">
+        <attribute name="title">
+         <string>Tab 2</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="2">
+          <widget class="QGroupBox" name="rightContent_2">
+           <property name="minimumSize">
+            <size>
+             <width>250</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>250</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_10">
+            <item row="0" column="0">
+             <widget class="QWidget" name="widget_37" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color:#4175f1;
+border-radius:4px;
+border:0;</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_16">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_9">
+                 <property name="styleSheet">
+                  <string notr="true">text-align:center;
+color:#fff;
+height:20px;
+font-size:18px;
+font-weight:bold;</string>
+                 </property>
+                 <property name="text">
+                  <string>All Sensor</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QPushButton" name="pb_selectall">
+                 <property name="maximumSize">
+                  <size>
+                   <width>200</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">        height:27px;
+        border-radius: 12px;
+        color: #333333;
+        font-size: 13px;
+        font-family:'Roboto';
+		background-color:#ffffff;
+padding:0 10px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Select All</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QPushButton" name="pb_deselectall">
+                 <property name="styleSheet">
+                  <string notr="true">        height:27px;
+        border-radius: 12px;
+        color: #333333;
+        font-size: 13px;
+        font-family:'Roboto';
+		background-color:#ffffff;
+padding:0 10px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Deselect All</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QWidget" name="widget_38" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color:#4175f1;
+border-radius:4px;
+border:0;</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_18">
+               <item row="0" column="0">
+                <widget class="QGroupBox" name="groupBox_29">
+                 <property name="styleSheet">
+                  <string notr="true">QGroupBox{
+	margin-top:19px;
+	font-size:13px;
+	color:#fff;
+	border-bottom:1px solid #fff;
+	border-radius:0;
+}
+QGroupBox::title {
+  	subcontrol-origin: margin;
+    subcontrol-position:left top; 
+  	padding:0;
+	height:20px;
+    background-color: transparent;
+	font-weight:bold;
+}
+</string>
+                 </property>
+                 <property name="title">
+                  <string>Lidar</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_17">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="pb_selectlidar">
+                    <property name="styleSheet">
+                     <string notr="true">        height:27px;
+        border-radius: 12px;
+        color: #333333;
+        font-size: 13px;
+        font-family:'Roboto';
+		background-color:#ffffff;
+padding:0 10px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Select All</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QPushButton" name="pb_deselectlidar">
+                    <property name="styleSheet">
+                     <string notr="true">        height:27px;
+        border-radius: 12px;
+        color: #333333;
+        font-size: 13px;
+        font-family:'Roboto';
+		background-color:#ffffff;
+padding:0 10px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Deselect All</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QGroupBox" name="groupBox_30">
+                 <property name="styleSheet">
+                  <string notr="true">QGroupBox{
+	margin-top:19px;
+	font-size:13px;
+	color:#fff;
+	border-bottom:1px solid #fff;
+	border-radius:0;
+}
+QGroupBox::title {
+  	subcontrol-origin: margin;
+    subcontrol-position:left top; 
+  	padding:0;
+	height:20px;
+    background-color: transparent;
+	font-weight:bold;
+}
+</string>
+                 </property>
+                 <property name="title">
+                  <string>Serial</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_19">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="pb_selectserial">
+                    <property name="styleSheet">
+                     <string notr="true">        height:27px;
+        border-radius: 12px;
+        color: #333333;
+        font-size: 13px;
+        font-family:'Roboto';
+		background-color:#ffffff;
+padding:0 10px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Select All</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QPushButton" name="pb_deselectserial">
+                    <property name="styleSheet">
+                     <string notr="true">        height:27px;
+        border-radius: 12px;
+        color: #333333;
+        font-size: 13px;
+        font-family:'Roboto';
+		background-color:#ffffff;
+padding:0 10px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Deselect All</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QGroupBox" name="groupBox_31">
+                 <property name="styleSheet">
+                  <string notr="true">QGroupBox{
+	margin-top:19px;
+	font-size:13px;
+	color:#fff;
+	border-bottom:1px solid #fff;
+	border-radius:0;
+}
+QGroupBox::title {
+  	subcontrol-origin: margin;
+    subcontrol-position:left top; 
+  	padding:0;
+	height:20px;
+    background-color: transparent;
+	font-weight:bold;
+}
+</string>
+                 </property>
+                 <property name="title">
+                  <string>Radar</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_20">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="pb_selectradar">
+                    <property name="styleSheet">
+                     <string notr="true">        height:27px;
+        border-radius: 12px;
+        color: #333333;
+        font-size: 13px;
+        font-family:'Roboto';
+		background-color:#ffffff;
+padding:0 10px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Select All</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QPushButton" name="pb_deselectradar">
+                    <property name="styleSheet">
+                     <string notr="true">        height:27px;
+        border-radius: 12px;
+        color: #333333;
+        font-size: 13px;
+        font-family:'Roboto';
+		background-color:#ffffff;
+padding:0 10px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Deselect All</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QGroupBox" name="groupBox_32">
+                 <property name="styleSheet">
+                  <string notr="true">QGroupBox{
+	margin-top:19px;
+	font-size:13px;
+	color:#fff;
+	border-radius:0;
+}
+QGroupBox::title {
+  	subcontrol-origin: margin;
+    subcontrol-position:left top; 
+  	padding:0;
+	height:20px;
+    background-color: transparent;
+	font-weight:bold;
+}
+</string>
+                 </property>
+                 <property name="title">
+                  <string>FHD CAMERA</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_21">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="pb_selectfhd">
+                    <property name="styleSheet">
+                     <string notr="true">        height:27px;
+        border-radius: 12px;
+        color: #333333;
+        font-size: 13px;
+        font-family:'Roboto';
+		background-color:#ffffff;
+padding:0 10px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Select All</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QPushButton" name="pb_deselectfhd">
+                    <property name="styleSheet">
+                     <string notr="true">        height:27px;
+        border-radius: 12px;
+        color: #333333;
+        font-size: 13px;
+        font-family:'Roboto';
+		background-color:#ffffff;
+padding:0 10px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Deselect All</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QWidget" name="widget_39" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color:#4175f1;
+border-radius:4px;
+border:0;</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_22">
+               <item row="0" column="0">
+                <widget class="QPushButton" name="pushButton_18">
+                 <property name="minimumSize">
+                  <size>
+                   <width>90</width>
+                   <height>90</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>90</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">        border-radius: 12px;
+        color: #333333;
+        font-size: 13px;
+        font-family:'Roboto';
+		background-color:#ffffff;
+padding:0 10px;
+background:url(:/resources/btn_rec.png);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QPushButton" name="pushButton_17">
+                 <property name="minimumSize">
+                  <size>
+                   <width>75</width>
+                   <height>75</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>75</width>
+                   <height>75</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">        height:27px;
+        border-radius: 12px;
+        color: #333333;
+        font-size: 13px;
+        font-family:'Roboto';
+		background-color:#ffffff;
+padding:0 10px;
+background:url(:/resources/btn_stop.png);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QGroupBox" name="centerContent_2">
+           <property name="minimumSize">
+            <size>
+             <width>500</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_19">
+              <property name="styleSheet">
+               <string notr="true">/*QGroupBox{
+border-top:1px solid red;
+margin-top:19px;
+font-size:14px;
+}
+QGroupBox::title {
+  subcontrol-origin: margin;
+    subcontrol-position:left top; 
+   padding:0;
+	heiight:20px;
+    background-color: transparent;
+	border-bottom:4px solid red;
+	visibility:hidden;
+}*/
+
+QGroupBox{
+ 	background-color: transparent;
+	border:0;
+}</string>
+              </property>
+              <property name="title">
+               <string/>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_5">
+               <item row="0" column="0" colspan="2">
+                <widget class="QLabel" name="label_59">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font:14px 'Roboto';</string>
+                 </property>
+                 <property name="text">
+                  <string>FHD Camera</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="Line" name="line_73">
+                 <property name="styleSheet">
+                  <string notr="true">background:#4175f0;
+border:0;
+width:25px;
+height:4px;
+
+</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="Line" name="line_72">
+                 <property name="styleSheet">
+                  <string notr="true">background:transparent;
+border-bottom:1px solid #dcdcdc;
+</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0" colspan="2">
+                <widget class="QWidget" name="widget_23" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background:#ffffff;
+border:0;
+border-radius:5px;
+font-size:13px;
+</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_6">
+                  <item row="9" column="0" colspan="3">
+                   <widget class="Line" name="line_78">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#f0f0f0;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="3" rowspan="5">
+                   <widget class="QGroupBox" name="groupBox_20">
+                    <property name="styleSheet">
+                     <string notr="true">QGroupBox{
+font-size:14px;
+border:0;
+background:transparent;
+}
+QGroupBox::title {
+  subcontrol-origin: margin;
+    subcontrol-position:center top; 
+   padding-top:5px;
+	height:20px;
+
+}</string>
+                    </property>
+                    <property name="title">
+                     <string>FRONT</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_26">
+                     <item row="0" column="0">
+                      <widget class="QWidget" name="widget_28" native="true">
+                       <property name="styleSheet">
+                        <string notr="true">background-color:#e8e8e8;</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="8" column="1">
+                   <widget class="QCheckBox" name="cb_rear_fhd">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QCheckBox" name="cb_front_fhd">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="4" rowspan="5">
+                   <widget class="QGroupBox" name="groupBox_21">
+                    <property name="styleSheet">
+                     <string notr="true">QGroupBox{
+font-size:14px;
+border:0;
+background:transparent;
+}
+QGroupBox::title {
+  subcontrol-origin: margin;
+    subcontrol-position:center top; 
+   padding-top:5px;
+	height:20px;
+
+}</string>
+                    </property>
+                    <property name="title">
+                     <string>FRONT</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_27">
+                     <item row="0" column="0">
+                      <widget class="QWidget" name="widget_29" native="true">
+                       <property name="styleSheet">
+                        <string notr="true">background-color:#e8e8e8;</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="lblTitle_41">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font-size:11px;</string>
+                    </property>
+                    <property name="text">
+                     <string>RECORD</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="2">
+                   <widget class="QRadioButton" name="radioButton_49">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QCheckBox" name="cb_left_fhd">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_60">
+                    <property name="styleSheet">
+                     <string notr="true">background:pink;
+border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Front</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0" colspan="3">
+                   <widget class="Line" name="line_76">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#7d7d7d;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="1">
+                   <widget class="QCheckBox" name="cb_right_fhd">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QRadioButton" name="radioButton_46">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="label_61">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Left</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0" colspan="3">
+                   <widget class="Line" name="line_74">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#f0f0f0;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="0">
+                   <widget class="QLabel" name="label_63">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Rear</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="3" rowspan="5">
+                   <widget class="QGroupBox" name="groupBox_23">
+                    <property name="styleSheet">
+                     <string notr="true">QGroupBox{
+font-size:14px;
+border:0;
+background:transparent;
+}
+QGroupBox::title {
+  subcontrol-origin: margin;
+    subcontrol-position:center top; 
+   padding-top:5px;
+	height:20px;
+
+}</string>
+                    </property>
+                    <property name="title">
+                     <string>FRONT</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_28">
+                     <item row="0" column="0">
+                      <widget class="QWidget" name="widget_31" native="true">
+                       <property name="styleSheet">
+                        <string notr="true">background-color:#e8e8e8;</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="lblTitle_40">
+                    <property name="styleSheet">
+                     <string notr="true">font-size:11px;</string>
+                    </property>
+                    <property name="text">
+                     <string>NAME</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="0" colspan="3">
+                   <widget class="Line" name="line_77">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#f0f0f0;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="2">
+                   <widget class="QRadioButton" name="radioButton_47">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="4" rowspan="5">
+                   <widget class="QGroupBox" name="groupBox_22">
+                    <property name="styleSheet">
+                     <string notr="true">QGroupBox{
+font-size:14px;
+border:0;
+background:transparent;
+}
+QGroupBox::title {
+  subcontrol-origin: margin;
+    subcontrol-position:center top; 
+   padding-top:5px;
+	height:20px;
+
+}</string>
+                    </property>
+                    <property name="title">
+                     <string>FRONT</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_32">
+                     <item row="0" column="0">
+                      <widget class="QWidget" name="widget_30" native="true">
+                       <property name="styleSheet">
+                        <string notr="true">background-color:#e8e8e8;</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="6" column="2">
+                   <widget class="QRadioButton" name="radioButton_48">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0" colspan="3">
+                   <widget class="Line" name="line_75">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#f0f0f0;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="label_62">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Right</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QLabel" name="lblTitle_42">
+                    <property name="styleSheet">
+                     <string notr="true">font-size:11px;</string>
+                    </property>
+                    <property name="text">
+                     <string>STATUS</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QGroupBox" name="groupBox_24">
+              <property name="styleSheet">
+               <string notr="true">/*QGroupBox{
+border-top:1px solid red;
+margin-top:19px;
+font-size:14px;
+}
+QGroupBox::title {
+  subcontrol-origin: margin;
+    subcontrol-position:left top; 
+   padding:0;
+	heiight:20px;
+    background-color: transparent;
+	border-bottom:4px solid red;
+	visibility:hidden;
+}*/
+
+QGroupBox{
+ 	background-color: transparent;
+	border:0;
+}</string>
+              </property>
+              <property name="title">
+               <string/>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_7">
+               <item row="0" column="0" colspan="2">
+                <widget class="QLabel" name="label_64">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font:14px 'Roboto';</string>
+                 </property>
+                 <property name="text">
+                  <string>SWM Camera</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="Line" name="line_80">
+                 <property name="styleSheet">
+                  <string notr="true">background:#4175f0;
+border:0;
+width:25px;
+height:4px;
+
+</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="Line" name="line_79">
+                 <property name="styleSheet">
+                  <string notr="true">background:transparent;
+border-bottom:1px solid #dcdcdc;
+</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0" colspan="2">
+                <widget class="QWidget" name="widget_32" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background:#ffffff;
+border:0;
+border-radius:5px;
+font-size:13px;
+</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_11">
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="label_66">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Left</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="0" colspan="3">
+                   <widget class="Line" name="line_84">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#f0f0f0;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_65">
+                    <property name="styleSheet">
+                     <string notr="true">background:pink;
+border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Front</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="2">
+                   <widget class="QRadioButton" name="radioButton_53">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="4" rowspan="6">
+                   <widget class="QGroupBox" name="groupBox_27">
+                    <property name="styleSheet">
+                     <string notr="true">QGroupBox{
+font-size:14px;
+border:0;
+background:transparent;
+}
+QGroupBox::title {
+  subcontrol-origin: margin;
+    subcontrol-position:center top; 
+   padding-top:5px;
+	height:20px;
+
+}</string>
+                    </property>
+                    <property name="title">
+                     <string>FRONT</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_25">
+                     <item row="0" column="0">
+                      <widget class="QWidget" name="widget_35" native="true">
+                       <property name="styleSheet">
+                        <string notr="true">background-color:#e8e8e8;</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="6" column="1">
+                   <widget class="QCheckBox" name="cb_right_svm">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="lblTitle_44">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font-size:11px;</string>
+                    </property>
+                    <property name="text">
+                     <string>RECORD</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="2">
+                   <widget class="QRadioButton" name="radioButton_52">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QRadioButton" name="radioButton_50">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="lblTitle_43">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font-size:11px;</string>
+                    </property>
+                    <property name="text">
+                     <string>NAME</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QLabel" name="lblTitle_45">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font-size:11px;</string>
+                    </property>
+                    <property name="text">
+                     <string>STATUS</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="0">
+                   <widget class="QLabel" name="label_68">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Rear</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="label_67">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Right</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="4" rowspan="4">
+                   <widget class="QGroupBox" name="groupBox_26">
+                    <property name="styleSheet">
+                     <string notr="true">QGroupBox{
+font-size:14px;
+border:0;
+background:transparent;
+margin-left:10px;
+}
+QGroupBox::title {
+  subcontrol-origin: margin;
+    subcontrol-position:center top; 
+   padding-top:5px;
+	height:20px;
+
+
+}</string>
+                    </property>
+                    <property name="title">
+                     <string>FRONT</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_24">
+                     <item row="0" column="0">
+                      <widget class="QWidget" name="widget_34" native="true">
+                       <property name="styleSheet">
+                        <string notr="true">background-color:#e8e8e8;</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="1" column="0" colspan="3">
+                   <widget class="Line" name="line_83">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#7d7d7d;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="0" colspan="3">
+                   <widget class="Line" name="line_85">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#f0f0f0;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QCheckBox" name="cb_front_svm">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="2">
+                   <widget class="QRadioButton" name="radioButton_51">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0" colspan="3">
+                   <widget class="Line" name="line_82">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#f0f0f0;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QCheckBox" name="cb_left_svm">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="1">
+                   <widget class="QCheckBox" name="cb_rear_svm">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0" colspan="3">
+                   <widget class="Line" name="line_81">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#f0f0f0;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="3" rowspan="6">
+                   <widget class="QGroupBox" name="groupBox_28">
+                    <property name="styleSheet">
+                     <string notr="true">QGroupBox{
+font-size:14px;
+border:0;
+background:transparent;
+}
+QGroupBox::title {
+  subcontrol-origin: margin;
+    subcontrol-position:center top; 
+   padding-top:5px;
+	height:20px;
+
+}</string>
+                    </property>
+                    <property name="title">
+                     <string>FRONT</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_23">
+                     <item row="0" column="0">
+                      <widget class="QWidget" name="widget_36" native="true">
+                       <property name="styleSheet">
+                        <string notr="true">background-color:#e8e8e8;</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="0" column="3" rowspan="3">
+                   <widget class="QGroupBox" name="groupBox_25">
+                    <property name="styleSheet">
+                     <string notr="true">QGroupBox{
+font-size:14px;
+border:0;
+background:transparent;
+}
+QGroupBox::title {
+  subcontrol-origin: margin;
+    subcontrol-position:center top; 
+   padding-top:5px;
+	height:20px;
+
+}</string>
+                    </property>
+                    <property name="title">
+                     <string>FRONT</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_30">
+                     <item row="0" column="0">
+                      <widget class="QWidget" name="widget_33" native="true">
+                       <property name="styleSheet">
+                        <string notr="true">background-color:#e8e8e8;</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QGroupBox" name="leftContent_2">
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_8">
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="gr_lidar_3">
+              <property name="styleSheet">
+               <string notr="true">/*QGroupBox{
+border-top:1px solid red;
+margin-top:19px;
+font-size:14px;
+}
+QGroupBox::title {
+  subcontrol-origin: margin;
+    subcontrol-position:left top; 
+   padding:0;
+	heiight:20px;
+    background-color: transparent;
+	border-bottom:4px solid red;
+	visibility:hidden;
+}*/
+
+QGroupBox{
+ 	background-color: transparent;
+	border:0;
+}</string>
+              </property>
+              <property name="title">
+               <string/>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_29">
+               <item row="0" column="0" colspan="2">
+                <widget class="QLabel" name="label_43">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font:14px 'Roboto';</string>
+                 </property>
+                 <property name="text">
+                  <string>Lidar</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="Line" name="line_47">
+                 <property name="styleSheet">
+                  <string notr="true">background:#4175f0;
+border:0;
+width:25px;
+height:4px;
+
+</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="Line" name="line_39">
+                 <property name="styleSheet">
+                  <string notr="true">background:transparent;
+border-bottom:1px solid #dcdcdc;
+</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0" colspan="2">
+                <widget class="QWidget" name="widget_17" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background:#ffffff;
+border:0;
+border-radius:5px;
+font-size:13px;
+</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_4">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="lblTitle_28">
+                    <property name="styleSheet">
+                     <string notr="true">font-size:11px;</string>
+                    </property>
+                    <property name="text">
+                     <string>NAME</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1" colspan="2">
+                   <widget class="QLabel" name="lblTitle_29">
+                    <property name="styleSheet">
+                     <string notr="true">font-size:11px;</string>
+                    </property>
+                    <property name="text">
+                     <string>RECORD</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="3" colspan="2">
+                   <widget class="QLabel" name="lblTitle_30">
+                    <property name="styleSheet">
+                     <string notr="true">font-size:11px;</string>
+                    </property>
+                    <property name="text">
+                     <string>STATUS</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0" colspan="5">
+                   <widget class="Line" name="line_50">
+                    <property name="styleSheet">
+                     <string notr="true">background:#7d7d7d;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0" rowspan="2">
+                   <widget class="QLabel" name="label_44">
+                    <property name="styleSheet">
+                     <string notr="true">background:pink;
+border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Front</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2">
+                   <widget class="QCheckBox" name="cb_front_lidar">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="4">
+                   <widget class="QRadioButton" name="radioButton_27">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0" colspan="5">
+                   <widget class="Line" name="line_48">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#f0f0f0;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0" rowspan="2">
+                   <widget class="QLabel" name="label_45">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:0;
+padding-left:3px;
+padding-right:3px;
+background-color:pink;</string>
+                    </property>
+                    <property name="text">
+                     <string>Top</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="2">
+                   <widget class="QCheckBox" name="cb_top_lidar">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="4">
+                   <widget class="QRadioButton" name="radioButton_32">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="0" colspan="5">
+                   <widget class="Line" name="line_49">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#f0f0f0;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="0" rowspan="2">
+                   <widget class="QLabel" name="label_46">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Rear</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="2">
+                   <widget class="QCheckBox" name="cb_rear_lidar">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="4">
+                   <widget class="QRadioButton" name="radioButton_33">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="styleSheet">
+               <string notr="true">/*QGroupBox{
+border-top:1px solid red;
+margin-top:19px;
+font-size:14px;
+}
+QGroupBox::title {
+  subcontrol-origin: margin;
+    subcontrol-position:left top; 
+   padding:0;
+	heiight:20px;
+    background-color: transparent;
+	border-bottom:4px solid red;
+	visibility:hidden;
+}*/
+
+QGroupBox{
+ 	background-color: transparent;
+	border:0;
+}</string>
+              </property>
+              <property name="title">
+               <string/>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_12">
+               <item row="0" column="0" colspan="2">
+                <widget class="QLabel" name="label_12">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font:14px 'Roboto';</string>
+                 </property>
+                 <property name="text">
+                  <string>Serial</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="Line" name="line_54">
+                 <property name="styleSheet">
+                  <string notr="true">background:#4175f0;
+border:0;
+width:25px;
+height:4px;
+
+</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="Line" name="line_53">
+                 <property name="styleSheet">
+                  <string notr="true">background:transparent;
+border-bottom:1px solid #dcdcdc;
+</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0" colspan="2">
+                <widget class="QWidget" name="widget_18" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background:#ffffff;
+border:0;
+border-radius:5px;
+font-size:13px;
+</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_13">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="lblTitle_31">
+                    <property name="styleSheet">
+                     <string notr="true">font-size:11px;</string>
+                    </property>
+                    <property name="text">
+                     <string>NAME</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="lblTitle_32">
+                    <property name="styleSheet">
+                     <string notr="true">font-size:11px;</string>
+                    </property>
+                    <property name="text">
+                     <string>RECORD</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QLabel" name="lblTitle_33">
+                    <property name="styleSheet">
+                     <string notr="true">font-size:11px;</string>
+                    </property>
+                    <property name="text">
+                     <string>STATUS</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0" colspan="3">
+                   <widget class="Line" name="line_58">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#7d7d7d;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_47">
+                    <property name="styleSheet">
+                     <string notr="true">background:pink;
+border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>C-CAN</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QCheckBox" name="cb_can_serial">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QRadioButton" name="radioButton_34">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0" colspan="3">
+                   <widget class="Line" name="line_55">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#f0f0f0;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="label_48">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Mobileye</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QCheckBox" name="cb_mobileye_serial">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="2">
+                   <widget class="QRadioButton" name="radioButton_35">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0" colspan="3">
+                   <widget class="Line" name="line_56">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#f0f0f0;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="label_49">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Weather</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="1">
+                   <widget class="QCheckBox" name="cb_weather_serial">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="2">
+                   <widget class="QRadioButton" name="radioButton_36">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QGroupBox" name="groupBox_7">
+              <property name="styleSheet">
+               <string notr="true">/*QGroupBox{
+border-top:1px solid red;
+margin-top:19px;
+font-size:14px;
+}
+QGroupBox::title {
+  subcontrol-origin: margin;
+    subcontrol-position:left top; 
+   padding:0;
+	heiight:20px;
+    background-color: transparent;
+	border-bottom:4px solid red;
+	visibility:hidden;
+}*/
+
+QGroupBox{
+ 	background-color: transparent;
+	border:0;
+}</string>
+              </property>
+              <property name="title">
+               <string/>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_14">
+               <item row="1" column="0">
+                <widget class="Line" name="line_65">
+                 <property name="styleSheet">
+                  <string notr="true">background:#4175f0;
+border:0;
+width:25px;
+height:4px;
+
+</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="Line" name="line_64">
+                 <property name="styleSheet">
+                  <string notr="true">background:transparent;
+border-bottom:1px solid #dcdcdc;
+</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0" colspan="2">
+                <widget class="QWidget" name="widget_22" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background:#ffffff;
+border:0;
+border-radius:5px;
+font-size:13px;
+</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_15">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="lblTitle_37">
+                    <property name="styleSheet">
+                     <string notr="true">font-size:11px;</string>
+                    </property>
+                    <property name="text">
+                     <string>NAME</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="lblTitle_38">
+                    <property name="styleSheet">
+                     <string notr="true">font-size:11px;</string>
+                    </property>
+                    <property name="text">
+                     <string>RECORD</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QLabel" name="lblTitle_39">
+                    <property name="styleSheet">
+                     <string notr="true">font-size:11px;</string>
+                    </property>
+                    <property name="text">
+                     <string>STATUS</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0" colspan="3">
+                   <widget class="Line" name="line_68">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#7d7d7d;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_50">
+                    <property name="styleSheet">
+                     <string notr="true">background:pink;
+border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Front center</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QCheckBox" name="cb_frontcenter_radar">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QRadioButton" name="radioButton_37">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0" colspan="3">
+                   <widget class="Line" name="line_66">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#f0f0f0;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="label_55">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Front left</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QCheckBox" name="cb_frontleft_radar">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="2">
+                   <widget class="QRadioButton" name="radioButton_38">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0" colspan="3">
+                   <widget class="Line" name="line_67">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#f0f0f0;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="label_56">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Front right</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="1">
+                   <widget class="QCheckBox" name="cb_frontright_radar">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="2">
+                   <widget class="QRadioButton" name="radioButton_39">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="0" colspan="3">
+                   <widget class="Line" name="line_69">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#f0f0f0;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="0">
+                   <widget class="QLabel" name="label_57">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Rear left</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="1">
+                   <widget class="QCheckBox" name="cb_rearleft_radar">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="2">
+                   <widget class="QRadioButton" name="radioButton_44">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="0" colspan="3">
+                   <widget class="Line" name="line_70">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background:#f0f0f0;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="10" column="0">
+                   <widget class="QLabel" name="label_58">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:0;
+padding-left:3px;
+padding-right:3px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Rear right</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="10" column="1">
+                   <widget class="QCheckBox" name="cb_rearright_radar">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="10" column="2">
+                   <widget class="QRadioButton" name="radioButton_45">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+              <widget class="Line" name="line_71">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>240</y>
+                 <width>250</width>
+                 <height>1</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background:#f0f0f0;</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="3">
+          <widget class="QGroupBox" name="groupBox_33">
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLabel" name="label_14">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font:14px 'Roboto';</string>
+              </property>
+              <property name="text">
+               <string>Radar</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tableWidget_4">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>1</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_relayall">
+        <attribute name="title">
+         <string>Page</string>
+        </attribute>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <action name="actionExit">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,50 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>icon/Full screen-icon.png</file>
+        <file>icon/icon-blue.png</file>
+        <file>icon/icon-gray.png</file>
+        <file>icon/Pause-icon.png</file>
+        <file>icon/volume-icon.png</file>
+        <file>icon/Play-icon.png</file>
+        <file>icon/Progress Play-btn.png</file>
+        <file>icon/Rec-btn.png</file>
+        <file>icon/Relay-btn.png</file>
+        <file>icon/Stop-btn.png</file>
+        <file>icon/back-icon.png</file>
+        <file>icon/Exit-Fullscreen-icon.png</file>
+        <file>image/1-Camera.png</file>
+        <file>image/2-Camera.png</file>
+        <file>image/3-Camera.png</file>
+        <file>icon/dashed_line.png</file>
+        <file>icon/Close-ic.png</file>
+        <file>icon/Maximize-ic.png</file>
+        <file>icon/Minimize-ic.png</file>
+        <file>icon/Retore-ic.png</file>
+        <file>icon/RecSelected-btn.png</file>
+        <file>icon/RecNonselect-btn.png</file>
+        <file>icon/RecHover-btn.png</file>
+        <file>icon/Success-icon.png</file>
+        <file>icon/ic-record.png</file>
+        <file>icon/ic-recording.png</file>
+        <file>icon/Stopped-btn-V2.jpg</file>
+        <file>icon/Stop-btn-V2.jpg</file>
+        <file>icon/Relay-btn-V2.jpg</file>
+        <file>icon/Recording-btn-V2.jpg</file>
+        <file>icon/Record-btn-V2.jpg</file>
+        <file>icon/Relaying-btn.gif</file>
+        <file>icon/Record-btn-inv.jpg</file>
+        <file>icon/Stop-btn-inv.jpg</file>
+        <file>icon/Relay-btn-inv.jpg</file>
+        <file>icon/fullscreen_small_icon.png</file>
+        <file>icon/warning_icon.png</file>
+        <file>icon/error_icon.png</file>
+        <file>image/lidar_1.png</file>
+        <file>image/lidar_2.png</file>
+        <file>image/lidar_3.png</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file>Roboto/Roboto-Bold.ttf</file>
+        <file>Roboto/Roboto-Medium.ttf</file>
+        <file>Roboto/Roboto-Regular.ttf</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ViewerPanel</class>
+ <widget class="QWidget" name="ViewerPanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1016</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2" stretch="4,1">
+   <property name="spacing">
+    <number>20</number>
+   </property>
+   <property name="leftMargin">
+    <number>16</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>16</number>
+   </property>
+   <property name="bottomMargin">
+    <number>6</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="hViewLayout"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="hControlLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

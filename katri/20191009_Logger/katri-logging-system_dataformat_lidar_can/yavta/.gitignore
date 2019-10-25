@@ -1,0 +1,8 @@
+# BUILD
+*.o
+yavta
+
+# IDE
+.cproject
+.project
+.settings

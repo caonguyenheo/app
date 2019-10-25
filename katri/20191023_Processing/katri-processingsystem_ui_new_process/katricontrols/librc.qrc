@@ -1,0 +1,53 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>icon/Full screen-icon.png</file>
+        <file>icon/icon-blue.png</file>
+        <file>icon/icon-gray.png</file>
+        <file>icon/Pause-icon.png</file>
+        <file>icon/volume-icon.png</file>
+        <file>icon/Play-icon.png</file>
+        <file>icon/Left-select.png</file>
+        <file>icon/Loading-icon.png</file>
+        <file>icon/None-select.png</file>
+        <file>icon/Right-select.png</file>
+        <file>icon/Cam-Exp.jpg</file>
+        <file>icon/CanBus-Exp.jpg</file>
+        <file>icon/GPS-Exp.jpg</file>
+        <file>icon/Lidar-Exp.jpg</file>
+        <file>icon/Radar-Exp.jpg</file>
+        <file>icon/SVM-Exp.jpg</file>
+        <file>icon/back-icon.png</file>
+        <file>icon/background_shadow.png</file>
+        <file>icon/Right-None-select.png</file>
+        <file>icon/choose-folder.png</file>
+        <file>icon/Loading_iCon.gif</file>
+        <file>icon/Exit Fullscreen.png</file>
+        <file>icon/radio-check.png</file>
+        <file>icon/radio-uncheck.png</file>
+        <file>icon/hyundaisupercar.png</file>
+        <file>icon/Solid_black.png</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file>Roboto/Roboto-Bold.ttf</file>
+        <file>Roboto/Roboto-Medium.ttf</file>
+    </qresource>
+    <qresource prefix="/sample">
+        <file>sample/Cam1-img.jpg</file>
+        <file>sample/Cam2-img.jpg</file>
+        <file>sample/Cam3-img.jpg</file>
+        <file>sample/Cam4-img.jpg</file>
+        <file>sample/CanBus-img.jpg</file>
+        <file>sample/GPS-img.jpg</file>
+        <file>sample/Lidar-img.jpg</file>
+        <file>sample/radar-img.jpg</file>
+        <file>sample/SVM1-img.jpg</file>
+        <file>sample/SVM2-img.jpg</file>
+        <file>sample/SVM3-img.jpg</file>
+        <file>sample/SVM4-img.jpg</file>
+        <file>sample/radar.jpg</file>
+        <file>sample/gps.png</file>
+    </qresource>
+    <qresource prefix="/qml">
+        <file>qml/RangeSlider.qml</file>
+    </qresource>
+</RCC>

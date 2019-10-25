@@ -1,0 +1,10 @@
+# idea
+**/CMakeLists.txt.user
+**/*.autosave
+
+# colcon build
+build*
+log
+install
+
+katri-logger/src/config\.h

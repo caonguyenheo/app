@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PerformanceManager</class>
+ <widget class="QWidget" name="PerformanceManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1033</width>
+    <height>565</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QGridLayout" name="backLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="BackPanel" name="backPanel" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(39,39,39);</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="managerLayout" stretch="0,0">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="NavigationManager" name="leftPanel" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>260</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>260</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:#2f2f2f;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="rightPanel" native="true">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <layout class="QVBoxLayout" name="rightLayout">
+        <property name="spacing">
+         <number>20</number>
+        </property>
+        <property name="leftMargin">
+         <number>29</number>
+        </property>
+        <property name="topMargin">
+         <number>28</number>
+        </property>
+        <property name="rightMargin">
+         <number>30</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="titleLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>2</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>17</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>17</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;
+font:16px 'Roboto';
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Disk 0 (C:D)</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>17</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>17</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto</family>
+              <pointsize>-1</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;
+font:14px 'Roboto';</string>
+            </property>
+            <property name="text">
+             <string>Active time</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="CustomGraph" name="mainGraph" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>690</width>
+            <height>340</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <property name="spacing">
+             <number>12</number>
+            </property>
+            <property name="topMargin">
+             <number>2</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="minimumSize">
+               <size>
+                <width>91</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Roboto</family>
+                <pointsize>-1</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:#767676;
+font:12px 'Roboto';</string>
+              </property>
+              <property name="text">
+               <string>Active time</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="minimumSize">
+               <size>
+                <width>91</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Roboto</family>
+                <pointsize>-1</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:white;
+font:16px 'Roboto';</string>
+              </property>
+              <property name="text">
+               <string>4%</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>25</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <property name="spacing">
+             <number>12</number>
+            </property>
+            <property name="topMargin">
+             <number>2</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="minimumSize">
+               <size>
+                <width>174</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Roboto</family>
+                <pointsize>-1</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:#767676;
+font:12px 'Roboto';</string>
+              </property>
+              <property name="text">
+               <string>Average response time</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="font">
+               <font>
+                <family>Roboto</family>
+                <pointsize>-1</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:white;
+font:16px 'Roboto';</string>
+              </property>
+              <property name="lineWidth">
+               <number>-1</number>
+              </property>
+              <property name="text">
+               <string>3.3 ms</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>25</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="gridLayout">
+            <property name="topMargin">
+             <number>2</number>
+            </property>
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="3" column="0" alignment="Qt::AlignTop">
+             <widget class="QLabel" name="label_8">
+              <property name="minimumSize">
+               <size>
+                <width>85</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Roboto</family>
+                <pointsize>-1</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:#767676;
+font:12px 'Roboto';</string>
+              </property>
+              <property name="text">
+               <string>Page file:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1" alignment="Qt::AlignTop">
+             <widget class="QLabel" name="label_13">
+              <property name="minimumSize">
+               <size>
+                <width>74</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Roboto</family>
+                <pointsize>-1</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:white;
+font:12px 'Roboto';</string>
+              </property>
+              <property name="text">
+               <string>Yes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0" alignment="Qt::AlignTop">
+             <widget class="QLabel" name="label_7">
+              <property name="minimumSize">
+               <size>
+                <width>85</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Roboto</family>
+                <pointsize>-1</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:#767676;
+font:12px 'Roboto';</string>
+              </property>
+              <property name="text">
+               <string>Capacity:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" alignment="Qt::AlignTop">
+             <widget class="QLabel" name="label_9">
+              <property name="minimumSize">
+               <size>
+                <width>85</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Roboto</family>
+                <pointsize>-1</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:#767676;
+font:12px 'Roboto';</string>
+              </property>
+              <property name="text">
+               <string>System disk:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1" alignment="Qt::AlignTop">
+             <widget class="QLabel" name="label_14">
+              <property name="minimumSize">
+               <size>
+                <width>74</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Roboto</family>
+                <pointsize>-1</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:white;
+font:12px 'Roboto';</string>
+              </property>
+              <property name="text">
+               <string>Yes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" alignment="Qt::AlignTop">
+             <widget class="QLabel" name="label_10">
+              <property name="minimumSize">
+               <size>
+                <width>85</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Roboto</family>
+                <pointsize>-1</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:#767676;
+font:12px 'Roboto';</string>
+              </property>
+              <property name="lineWidth">
+               <number>1</number>
+              </property>
+              <property name="text">
+               <string>Formatted:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1" alignment="Qt::AlignTop">
+             <widget class="QLabel" name="label_11">
+              <property name="minimumSize">
+               <size>
+                <width>74</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Roboto</family>
+                <pointsize>-1</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:white;
+font:12px 'Roboto';</string>
+              </property>
+              <property name="text">
+               <string>936 GB</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" alignment="Qt::AlignTop">
+             <widget class="QLabel" name="label_12">
+              <property name="minimumSize">
+               <size>
+                <width>74</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Roboto</family>
+                <pointsize>-1</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:white;
+font:12px 'Roboto';</string>
+              </property>
+              <property name="text">
+               <string>931 GB</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <property name="spacing">
+               <number>29</number>
+              </property>
+              <item>
+               <widget class="Line" name="line">
+                <property name="styleSheet">
+                 <string notr="true">QFrame[frameShape=&quot;5&quot;]
+{
+        color: rgb(116, 166, 77);
+}</string>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Plain</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>1</number>
+                </property>
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <property name="spacing">
+                 <number>12</number>
+                </property>
+                <property name="topMargin">
+                 <number>2</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_16">
+                  <property name="minimumSize">
+                   <size>
+                    <width>86</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Roboto</family>
+                    <pointsize>-1</pointsize>
+                    <weight>50</weight>
+                    <italic>false</italic>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color:#767676;
+font:12px 'Roboto';</string>
+                  </property>
+                  <property name="text">
+                   <string>Read speed</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_15">
+                  <property name="minimumSize">
+                   <size>
+                    <width>86</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Roboto</family>
+                    <pointsize>-1</pointsize>
+                    <weight>50</weight>
+                    <italic>false</italic>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color:white;
+font:16px 'Roboto';</string>
+                  </property>
+                  <property name="text">
+                   <string>102 KB/s</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>25</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <property name="spacing">
+               <number>31</number>
+              </property>
+              <item>
+               <widget class="Line" name="line_2">
+                <property name="styleSheet">
+                 <string notr="true">/*QFrame[frameShape=&quot;5&quot;]
+{
+        color: rgb(116, 166, 77);
+
+}*/
+
+QFrame{
+        background-image: url(:/img/icon/dashed_line.png);border:0;font-size:1px;
+         background-repeat: repeat-y;
+}
+</string>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Plain</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>3</number>
+                </property>
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <property name="spacing">
+                 <number>12</number>
+                </property>
+                <property name="topMargin">
+                 <number>2</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_17">
+                  <property name="minimumSize">
+                   <size>
+                    <width>112</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Roboto</family>
+                    <pointsize>-1</pointsize>
+                    <weight>50</weight>
+                    <italic>false</italic>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color:#767676;
+font:12px 'Roboto';</string>
+                  </property>
+                  <property name="text">
+                   <string>Write speed</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_18">
+                  <property name="minimumSize">
+                   <size>
+                    <width>112</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Roboto</family>
+                    <pointsize>-1</pointsize>
+                    <weight>50</weight>
+                    <italic>false</italic>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color:white;
+font:16px 'Roboto';</string>
+                  </property>
+                  <property name="text">
+                   <string>131 KB/s</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>25</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>10</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CustomGraph</class>
+   <extends>QWidget</extends>
+   <header>graph/customgraph.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BackPanel</class>
+   <extends>QWidget</extends>
+   <header>common/backpanel.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>NavigationManager</class>
+   <extends>QWidget</extends>
+   <header>graph/navigationmanager.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

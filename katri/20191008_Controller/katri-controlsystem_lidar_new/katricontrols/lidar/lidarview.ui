@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LidarView</class>
+ <widget class="QWidget" name="LidarView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1033</width>
+    <height>565</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="BackPanel" name="Backpanel" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #363636;
+</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="labelgridLayout" rowstretch="0" columnstretch="0" columnminimumwidth="0">
+     <property name="leftMargin">
+      <number>50</number>
+     </property>
+     <property name="topMargin">
+      <number>20</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="labellidarview">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_7">
+     <property name="leftMargin">
+      <number>50</number>
+     </property>
+     <property name="topMargin">
+      <number>50</number>
+     </property>
+     <property name="rightMargin">
+      <number>50</number>
+     </property>
+     <property name="bottomMargin">
+      <number>50</number>
+     </property>
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QWidget" name="lidarWidget" native="true">
+       <property name="styleSheet">
+        <string notr="true">QWidget{border-style:solid;
+border-width:5px;
+border-radius:5px;
+border-color:rgb(100,100,100);
+background-color:rgb(86,86,86);}</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>30</number>
+          </property>
+          <item row="1" column="1">
+           <widget class="QWidget" name="lidarWidget_2" native="true">
+            <property name="maximumSize">
+             <size>
+              <width>230</width>
+              <height>276</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QWidget{border-style:solid;
+border-width:5px;
+border-radius:5px;
+border-color:rgb(100,100,100);
+background-color:rgb(39,39,39);}</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <layout class="QGridLayout" name="gridLayout_3">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QWidget" name="lidarWidget_3" native="true">
+            <property name="maximumSize">
+             <size>
+              <width>230</width>
+              <height>276</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QWidget{border-style:solid;
+border-width:5px;
+border-radius:5px;
+border-color:rgb(100,100,100);
+background-color:rgb(39,39,39);}</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <layout class="QGridLayout" name="gridLayout">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QWidget" name="lidarWidget_1" native="true">
+            <property name="maximumSize">
+             <size>
+              <width>230</width>
+              <height>276</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QWidget{border-style:solid;
+border-width:5px;
+border-radius:5px;
+border-color:rgb(100,100,100);
+background-color:rgb(39,39,39);}</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <layout class="QGridLayout" name="gridLayout_5">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BackPanel</class>
+   <extends>QWidget</extends>
+   <header>common/backpanel.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

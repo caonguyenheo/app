@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>icon/notification/Danger-icon.svg</file>
+        <file>icon/notification/Error-icon.svg</file>
+        <file>icon/notification/Question-icon.svg</file>
+        <file>icon/notification/Success-icon.svg</file>
+    </qresource>
+</RCC>

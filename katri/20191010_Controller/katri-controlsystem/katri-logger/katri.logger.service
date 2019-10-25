@@ -1,0 +1,20 @@
+[Unit]
+Description=KATRI Logger System
+
+Wants=network.target
+After=network-online.target
+
+[Service]
+User=dong
+Group=dong
+Type=simple
+WorkingDirectory=/home/dong/qt-projects/katri-logging-system/build-katri-logger-Desktop_Qt_5_13_0_GCC_64bit-Debug
+ExecStartPre=-/bin/sleep 30
+ExecStart=/home/dong/qt-projects/katri-logging-system/build-katri-logger-Desktop_Qt_5_13_0_GCC_64bit-Debug/katri.logger.sh
+Restart=on-failure
+RestartSec=10
+KillMode=control-group
+TimeoutSec=infinity
+
+[Install]
+WantedBy=multi-user.target
